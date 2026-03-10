@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&display=swap');
+
+/* ===== RESET ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== GLOBAL STYLES ===== */
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Slate_300: hsl(212, 45%, 89%);
+    --Slate_500: hsl(216, 15%, 48%);
+    --Slate_900: hsl(218, 44%, 22%);
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--Slate_300);
+    font-family: "Outfit", sans-serif;
+    position: relative;
+
+    display: grid;
+    place-items: center;
+}
+
+/* ===== QR COMPONENT ===== */
+
+.QR-div {
+    margin: 10px ;
+
+    display: block;
+
+    padding: 15px;
+    text-align: center;
+    background-color: var(--White);
+    border-radius: 10px;
+    max-width: 280px;
+    min-height: 400px;
+}
+
+.QR-div img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.QR-div h4{
+    color: var(--Slate_900);
+    font-size: 19px;
+    margin: 10px 10px;
+}
+
+.QR-div p{
+    color: var(--Slate_500);
+    font-size: 13px;
+    padding: 10px;
+    margin: 10px;
+}
+/* ===== FOOTER ===== */
+
+.attribution {
+    position: absolute;
+    bottom: 0px;
+
+    width: 100%;
+
+    font-size: 11px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(64, 146, 119);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
